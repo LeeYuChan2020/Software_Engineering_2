@@ -1,0 +1,11 @@
+[LeeYuChan2020] Tue May 20 05:24:25 2025 +0900 Analysis class diagram 작성 완료 및 파일 이름 수정 9f9ea9d
+[LeeYuChan2020] Mon May 19 21:46:23 2025 +0900 Communication diagram 파일 변환 7631552
+[LeeYuChan2020] Mon May 19 21:28:14 2025 +0900 Communication Diagram 작성 완료 (6/6) a16c4eb
+[LeeYuChan2020] Sun May 18 23:15:14 2025 +0900 CD 작성중 (5/6) e42aab2
+[LeeYuChan2020] Fri May 16 04:30:36 2025 +0900 CD 작성 중 (3/6) e024d08
+[LeeYuChan2020] Thu May 15 23:17:05 2025 +0900 RL 내용 추가 / Communication diagram(CD) 작성 중 37df989
+[LeeYuChan2020] Thu May 15 22:57:29 2025 +0900 Use case decription의 actor 이름 영문으로 변경 529c5f3
+[LeeYuChan2020] Tue May 13 23:30:59 2025 +0900 초안 기반 Use case description 작성 완료 2e5328d
+[LeeYuChan2020] Tue May 13 14:21:00 2025 +0900 RL 초안 기반 Use case diagram(UCD) 작성 완료 31a11a9
+[LeeYuChan2020] Mon May 12 20:21:35 2025 +0900 수정된 Requirement List 초안 작성 68db981
+[LeeYuChan2020] Mon May 12 20:15:34 2025 +0900 Initial commit 2cea5f4
