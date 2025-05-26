@@ -23026,7 +23026,7 @@
 										"$ref": "AAAAAAGWz+J5AJhRlkM="
 									},
 									"name": "input_file",
-									"type": "ofstream"
+									"type": "ifstream"
 								},
 								{
 									"_type": "UMLParameter",
@@ -23779,7 +23779,7 @@
 										"$ref": "AAAAAAGW1Ndek+LSD1I="
 									},
 									"name": "input_file",
-									"type": "ofstream"
+									"type": "ifstream"
 								},
 								{
 									"_type": "UMLParameter",
@@ -24124,7 +24124,7 @@
 										"$ref": "AAAAAAGW3XqZ2xSuG8s="
 									},
 									"name": "input_file",
-									"type": "ofstream"
+									"type": "ifstream"
 								},
 								{
 									"_type": "UMLParameter",
@@ -24468,7 +24468,7 @@
 										"$ref": "AAAAAAGW4UNQCT01yIE="
 									},
 									"name": "input_file",
-									"type": "ofstream"
+									"type": "ifstream"
 								},
 								{
 									"_type": "UMLParameter",
@@ -24751,7 +24751,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGWpIuzxD/0MDA="
 					},
-					"name": " CheckUserBikeRental",
+					"name": "CheckUserBikeRental",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
@@ -30524,7 +30524,7 @@
 											"top": 114,
 											"width": 545.3876953125,
 											"height": 13,
-											"text": "+CreateUserAccount(input_file: ofstream, id: String, password: String, phone_number: String)",
+											"text": "+CreateUserAccount(input_file: ifstream, id: String, password: String, phone_number: String)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -31277,7 +31277,7 @@
 											"top": 298,
 											"width": 395.875,
 											"height": 13,
-											"text": "+EnterAccountInfo(input_file: ofstream, id: String, password: String)",
+											"text": "+EnterAccountInfo(input_file: ifstream, id: String, password: String)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -32185,7 +32185,7 @@
 											"top": 906,
 											"width": 460.33544921875,
 											"height": 13,
-											"text": "+EnterBikeInfo(input_file: ofstream, bike_id: String, bike_product_name: String)",
+											"text": "+EnterBikeInfo(input_file: ifstream, bike_id: String, bike_product_name: String)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -32900,7 +32900,7 @@
 											"top": 1002,
 											"width": 450.24267578125,
 											"height": 13,
-											"text": "+EnterBikeID(input_file: ofstream, bike_id: String, bike_product_name: String)",
+											"text": "+EnterBikeID(input_file: ifstream, bike_id: String, bike_product_name: String)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -33240,7 +33240,7 @@
 											"top": 76,
 											"width": 307.36328125,
 											"height": 13,
-											"text": " CheckUserBikeRental"
+											"text": "CheckUserBikeRental"
 										},
 										{
 											"_type": "LabelView",
