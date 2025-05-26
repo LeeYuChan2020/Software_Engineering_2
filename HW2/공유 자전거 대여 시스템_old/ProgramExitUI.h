@@ -11,9 +11,8 @@ public:
 	
 /**
  * @param is_program_exit
- * @param output_file
  */
-void RequestExit(Boolean is_program_exit, OutputStream output_file);
+void RequestExit(Boolean is_program_exit);
 };
 
 #endif //_PROGRAMEXITUI_H

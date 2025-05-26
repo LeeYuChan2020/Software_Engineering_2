@@ -11,9 +11,10 @@ public:
 	
 /**
  * @param input_file
- * @param output_file
+ * @param id
+ * @param password
  */
-void EnterAccountInfo(InputStream input_file, OutputStream output_file);
+void EnterAccountInfo(ofstream input_file, String id, String password);
 private: 
 	SignIn sign_in_;
 };

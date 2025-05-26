@@ -19,9 +19,11 @@ public:
  * void createUserAccount(ofstream& inputfile, string id, string pwd, string phnNum);
  * 
  * @param input_file
- * @param output_file
+ * @param id
+ * @param password
+ * @param phone_number
  */
-void CreateUserAccount(InputStream input_file, OutputStream output_file);
+void CreateUserAccount(ofstream input_file, String id, String password, String phone_number);
 private: 
 	SignUp sign_up_;
 };

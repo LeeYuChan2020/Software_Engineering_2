@@ -12,8 +12,9 @@
 
 /**
  * @param input_file
- * @param output_file
+ * @param id
+ * @param password
  */
-void SignInUI::EnterAccountInfo(InputStream input_file, OutputStream output_file) {
+void SignInUI::EnterAccountInfo(ofstream input_file, String id, String password) {
 
 }

@@ -12,8 +12,8 @@
 
 /**
  * requestSignOut(id)
- * @param output_file
+ * @param id
  */
-void SignOutUI::RequestSignOut(OutputStream output_file) {
+void SignOutUI::RequestSignOut(String id) {
 
 }

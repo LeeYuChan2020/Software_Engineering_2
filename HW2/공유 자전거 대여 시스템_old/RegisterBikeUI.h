@@ -11,9 +11,10 @@ public:
 	
 /**
  * @param input_file
- * @param output_file
+ * @param bike_id
+ * @param bike_product_name
  */
-void EnterBikeInfo(InputStream input_file, OutputStream output_file);
+void EnterBikeInfo(ofstream input_file, String bike_id, String bike_product_name);
 private: 
 	RegisterBike register_bike_;
 };

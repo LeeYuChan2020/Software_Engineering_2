@@ -13,9 +13,10 @@ public:
  * bikeID 값 입력 받기
  * bikeID , bikeProductName 함수로 값 받기
  * @param input_file
- * @param output_file
+ * @param bike_id
+ * @param bike_product_name
  */
-void EnterBikeID(InputStream input_file, OutputStream output_file);
+void EnterBikeID(ofstream input_file, String bike_id, String bike_product_name);
 private: 
 	RentBike rent_bike_;
 };

@@ -12,8 +12,7 @@
 
 /**
  * @param is_program_exit
- * @param output_file
  */
-void ProgramExitUI::RequestExit(Boolean is_program_exit, OutputStream output_file) {
+void ProgramExitUI::RequestExit(Boolean is_program_exit) {
 
 }

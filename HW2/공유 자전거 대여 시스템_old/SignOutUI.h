@@ -11,9 +11,9 @@ public:
 	
 /**
  * requestSignOut(id)
- * @param output_file
+ * @param id
  */
-void RequestSignOut(OutputStream output_file);
+void RequestSignOut(String id);
 private: 
 	SignOut sign_out_;
 };

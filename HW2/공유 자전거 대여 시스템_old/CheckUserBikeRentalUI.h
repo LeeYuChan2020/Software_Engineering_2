@@ -3,20 +3,12 @@
  */
 
 
-#include "CheckUserBikeRentalUI.h"
+#ifndef _CHECKUSERBIKERENTALUI_H
+#define _CHECKUSERBIKERENTALUI_H
 
-/**
- * CheckUserBikeRentalUI implementation
- */
-
-
-/**
- * @param output_file
- */
-void CheckUserBikeRentalUI::set_output_file(OutputStream output_file) {
-
-}
-
+class CheckUserBikeRentalUI {
+public: 
+	
 /**
  * vector<pair<string, string>> StringPair = {{"ID1", "Bike1"}, {"ID2", "Bike2"}};
  * 
@@ -25,6 +17,7 @@ void CheckUserBikeRentalUI::set_output_file(OutputStream output_file) {
  * }
  * @param rented_bike_info
  */
-void CheckUserBikeRentalUI::StartInterface(StringPair[*] rented_bike_info) {
+void StartInterface(StringPair[*] rented_bike_info);
+};
 
-}
+#endif //_CHECKUSERBIKERENTALUI_H

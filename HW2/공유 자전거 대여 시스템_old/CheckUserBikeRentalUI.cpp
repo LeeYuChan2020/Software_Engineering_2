@@ -11,13 +11,6 @@
 
 
 /**
- * @param output_file
- */
-void CheckUserBikeRentalUI::set_output_file(OutputStream output_file) {
-
-}
-
-/**
  * vector<pair<string, string>> StringPair = {{"ID1", "Bike1"}, {"ID2", "Bike2"}};
  * 
  * for (int i = 0; i < StringPair.size(); i++) {
