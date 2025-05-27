@@ -1,22 +1,15 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _SIGNUP_H
 #define _SIGNUP_H
+#include <string>
+#include "User.h"
+using namespace std;
+
 
 class SignUp {
-public: 
-	
-/**
- * @param id
- * @param password
- * @param phone_number
- */
-void AddUserAccount(String id, String password, String phone_number);
-private: 
-	User user_account_;
+public:
+	void AddUserAccount(string id, string password, string phone_number);
+private:
+	User* puser_account_;
 };
 
-#endif //_SIGNUP_H
+#endif

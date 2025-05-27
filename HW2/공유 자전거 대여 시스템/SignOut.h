@@ -1,20 +1,15 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _SIGNOUT_H
 #define _SIGNOUT_H
 
+#include "Member.h"
+#include <string>
+using namespace std;
+
 class SignOut {
 public: 
-	
-/**
- * @param id
- */
-void HandleSignOut(String id);
+	void HandleSignOut(string& id);
 private: 
-	Member member_account_;
+	Member* pmember_account_;
 };
 
 #endif //_SIGNOUT_H

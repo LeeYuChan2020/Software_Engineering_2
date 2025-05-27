@@ -1,18 +1,15 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _CHECKUSERBIKERENTAL_H
 #define _CHECKUSERBIKERENTAL_H
+#include <vector>
+#include "CheckUserBikeRentalUI.h"
+#include "User.h"
 
 class CheckUserBikeRental {
-public: 
-	
-void CheckUseBikeRentalList();
-private: 
-	CheckUserBikeRentalUI check_ubr_ui_;
-	User user_account_;
+public:
+	void CheckUserBikeRentalList();
+private:
+	CheckUserBikeRentalUI* pcheck_ubr_ui_;
+	User* puser_account_;
 };
 
-#endif //_CHECKUSERBIKERENTAL_H
+#endif

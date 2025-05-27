@@ -1,29 +1,12 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "SignUpUI.h"
 
-/**
- * SignUpUI implementation
- * 
- * in_fp >> id >> pwd >> phnNum >> password
- */
+void SignUpUI::CreateUserAccount(ifstream& input_file, ofstream& output_file) {
+	string id, password, phone_number;
+	input_file >> id >> password >> phone_number;
 
+	psign_up_->AddUserAccount(id, password, phone_number);
 
-/**
- * void
- * 
- * string id
- * string pwd
- * string 
- * 
- * void createUserAccount(ofstream& inputfile, string id, string pwd, string phnNum);
- * 
- * @param input_file
- * @param output_file
- */
-void SignUpUI::CreateUserAccount(InputStream input_file, OutputStream output_file) {
-
-}
+	// 출력 형식
+	output_file << "1.1. 회원가입" << endl;
+	output_file << "> " << id << " " << password << " " << phone_number << endl << endl;
+};

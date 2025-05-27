@@ -1,30 +1,13 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "CheckUserBikeRentalUI.h"
 
-/**
- * CheckUserBikeRentalUI implementation
- */
 
-
-/**
- * @param output_file
- */
-void CheckUserBikeRentalUI::set_output_file(OutputStream output_file) {
-
+void CheckUserBikeRentalUI::StartInterface(const vector<pair<string, string>>& rented_bike_info) {
+	for(int i = 0; i < rented_bike_info.size(); i++) {
+		*poutput_file_ << rented_bike_info[i].first << " " << rented_bike_info[i].second << endl;
+	}
 }
 
-/**
- * vector<pair<string, string>> StringPair = {{"ID1", "Bike1"}, {"ID2", "Bike2"}};
- * 
- * for (int i = 0; i < StringPair.size(); i++) {
- *     cout << StringPair[i].first << " " << StringPair[i].second << endl;
- * }
- * @param rented_bike_info
- */
-void CheckUserBikeRentalUI::StartInterface(StringPair[*] rented_bike_info) {
-
+void CheckUserBikeRentalUI::SetOutputFile(ofstream& output_file) {
+	poutput_file_ = &output_file;
+	pcheck_user_bike_rental_->CheckUserBikeRentalList();
 }

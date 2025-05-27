@@ -1,19 +1,14 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "BikeCollection.h"
 
-/**
- * BikeCollection implementation
- */
+void BikeCollection::AddNewBike(string bike_id, string bike_product_name) {
+	RegisteredBike* newBike = new RegisteredBike(bike_id, bike_product_name);
+	registered_bikes_.push_back(newBike);
+}
 
-
-/**
- * @param bike_id
- * @param bike_product_name
- */
-void BikeCollection::AddNewBike(String bike_id, String bike_product_name) {
-
+string BikeCollection::FindAndGetProductName(string bike_id) {
+	for(int i = 0; i < registered_bikes_.size(); i++) {
+		if (registered_bikes_[i]->get_id() == bike_id) {
+			return registered_bikes_[i]->get_product_name();
+		}
+	}
 }

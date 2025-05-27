@@ -1,18 +1,5 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "SignOut.h"
 
-/**
- * SignOut implementation
- */
-
-
-/**
- * @param id
- */
-void SignOut::HandleSignOut(String id) {
-
+void SignOut::HandleSignOut(string& id) {
+	pmember_account_->ClearSession(id);
 }

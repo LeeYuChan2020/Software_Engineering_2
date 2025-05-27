@@ -1,19 +1,13 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "SignInUI.h"
 
-/**
- * SignInUI implementation
- */
 
+void SignInUI::EnterAccountInfo(ifstream& input_file, ofstream& output_file) {
+	string id, password;
+	input_file >> id >> password;
 
-/**
- * @param input_file
- * @param output_file
- */
-void SignInUI::EnterAccountInfo(InputStream input_file, OutputStream output_file) {
+	psign_in_->HandleSignIn(id, password);
 
+	// 출력 형식
+	output_file << "2.1. 로그인" << endl;
+	output_file << "> " << id << " " << password << endl << endl;
 }

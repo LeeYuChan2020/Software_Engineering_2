@@ -1,29 +1,15 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _SIGNUPUI_H
 #define _SIGNUPUI_H
+#include <fstream>
+#include <string.h>
+#include "SignUp.h"
+using namespace std;
 
 class SignUpUI {
 public: 
-	
-/**
- * void
- * 
- * string id
- * string pwd
- * string 
- * 
- * void createUserAccount(ofstream& inputfile, string id, string pwd, string phnNum);
- * 
- * @param input_file
- * @param output_file
- */
-void CreateUserAccount(InputStream input_file, OutputStream output_file);
+	void CreateUserAccount(ifstream& input_file, ofstream& output_file);
 private: 
-	SignUp sign_up_;
+	SignUp* psign_up_;
 };
 
-#endif //_SIGNUPUI_H
+#endif

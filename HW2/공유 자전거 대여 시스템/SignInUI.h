@@ -1,21 +1,15 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _SIGNINUI_H
 #define _SIGNINUI_H
 
+#include "SignIn.h"
+#include <fstream>
+using namespace std;
+
 class SignInUI {
 public: 
-	
-/**
- * @param input_file
- * @param output_file
- */
-void EnterAccountInfo(InputStream input_file, OutputStream output_file);
+	void EnterAccountInfo(ifstream& input_file, ofstream& output_file);
 private: 
-	SignIn sign_in_;
+	SignIn* psign_in_;
 };
 
 #endif //_SIGNINUI_H

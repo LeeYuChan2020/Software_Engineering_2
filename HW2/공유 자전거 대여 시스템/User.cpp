@@ -1,44 +1,18 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "User.h"
 
-/**
- * User implementation
- */
 
-
-/**
- * @param id
- * @param password
- * @param phone_number
- */
-void User::User(String id, String password, String phone_number) {
+User::User(string id, string password, string phone_number) {
 
 }
 
-/**
- * @param id
- * @param password
- * @param phone_number
- */
-void User::AddNewUser(String id, String password, String phone_number) {
-
+void User::AddNewUser(string id, string password, string phone_number) {
+	User* newUser = new User(id, password, phone_number);
 }
 
-/**
- * @return StringPair[*]
- */
-StringPair[*] User::ListRentedBikes() {
-    return null;
+vector<pair<string, string>> User::ListRentedBikes() {
+    //return null;
 }
 
-/**
- * @param bike_id
- * @param bike_product_name
- */
-void User::RentBike(String bike_id, String bike_product_name) {
+void User::RentBike(string bike_id, string bike_product_name) {
 
 }

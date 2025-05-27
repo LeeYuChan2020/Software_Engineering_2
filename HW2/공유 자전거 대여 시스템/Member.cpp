@@ -1,41 +1,22 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "Member.h"
 
-/**
- * Member implementation
- */
-
-
-/**
- * isLoggedIn = true
- * isExit = false
- * @param id
- * @param password
- */
-void Member::LoadAccount(String id, String password) {
-
+void Member::LoadAccount(string id, string password) {
+	is_logged_in_ = true;
+	is_exit_ = false;
+	id_ = id;
+	password_ = password;
 }
 
-/**
- * if(ID != admin)
- *   phoneNumber = null
- * ID = null
- * password = null
- * isLoggedIn = false
- * 
- * @param id
- */
-void Member::ClearSession(String id) {
-
+void Member::ClearSession(string& id) {
+	//로그아웃하는 id 값 전달
+	id = id_;
+	//데이터 초기화
+	id_ = "";
+	password_ = "";
+	is_logged_in_ = false;
 }
 
-/**
- * @param is_exit
- */
-void Member::Exit(Boolean is_exit) {
 
+void Member::Exit(bool& is_exit) {
+	is_exit = true;
 }

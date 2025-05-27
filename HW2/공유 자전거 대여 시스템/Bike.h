@@ -1,15 +1,16 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _BIKE_H
 #define _BIKE_H
 
+#include <string>
+using namespace std;
+
 class Bike {
+public:
+	string get_id();
+	string get_product_name();
 protected: 
-	String id_;
-	String product_name_;
+	string id_;
+	string product_name_;
 };
 
 #endif //_BIKE_H

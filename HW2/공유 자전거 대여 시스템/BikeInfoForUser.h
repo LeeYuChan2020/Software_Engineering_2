@@ -1,13 +1,9 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _BIKEINFOFORUSER_H
 #define _BIKEINFOFORUSER_H
 
 #include "Bike.h"
-
+#include <string>
+using namespace std;
 
 class BikeInfoForUser: public Bike {
 public: 
@@ -19,12 +15,12 @@ public:
  * @param bike_id
  * @param bike_product_name
  */
-void BikeInfoForUser(String bike_id, String bike_product_name);
+	BikeInfoForUser(string bike_id, string bike_product_name);
 	
 /**
  * String[2] : {id, ProductName}
  */
-String[2] get_bike_info();
+	pair<string, string> get_bike_info();
 };
 
 #endif //_BIKEINFOFORUSER_H

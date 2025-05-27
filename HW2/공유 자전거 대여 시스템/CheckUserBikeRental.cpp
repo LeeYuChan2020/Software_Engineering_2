@@ -1,15 +1,8 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #include "CheckUserBikeRental.h"
 
-/**
- * CheckUserBikeRental implementation
- */
 
-
-void CheckUserBikeRental::CheckUseBikeRentalList() {
-
-}
+void CheckUserBikeRental::CheckUserBikeRentalList() {
+	vector<pair<string, string>> rented_bike_info;
+	rented_bike_info = puser_account_->ListRentedBikes();
+	pcheck_ubr_ui_->StartInterface(rented_bike_info);
+};

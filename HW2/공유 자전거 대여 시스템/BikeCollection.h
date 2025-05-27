@@ -1,21 +1,18 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _BIKECOLLECTION_H
 #define _BIKECOLLECTION_H
 
+#include "RegisteredBike.h"
+#include <vector>
+#include <string>
+using namespace std;
+
+
 class BikeCollection {
 public: 
-	
-/**
- * @param bike_id
- * @param bike_product_name
- */
-void AddNewBike(String bike_id, String bike_product_name);
+	void AddNewBike(string bike_id, string bike_product_name);
+	string FindAndGetProductName(string bike_id);
 private: 
-	RegisteredBike [*] registered_bikes_;
+	vector<RegisteredBike*> registered_bikes_;
 };
 
 #endif //_BIKECOLLECTION_H

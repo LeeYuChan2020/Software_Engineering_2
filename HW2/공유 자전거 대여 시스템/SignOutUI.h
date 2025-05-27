@@ -1,21 +1,16 @@
-/**
- * Project SE Design & Implementation
- */
-
-
 #ifndef _SIGNOUTUI_H
 #define _SIGNOUTUI_H
 
+#include "SignOut.h"
+#include <fstream>
+using namespace std;
+
+
 class SignOutUI {
 public: 
-	
-/**
- * requestSignOut(id)
- * @param output_file
- */
-void RequestSignOut(OutputStream output_file);
+	void RequestSignOut(ofstream& output_file);
 private: 
-	SignOut sign_out_;
+	SignOut *psign_out_;
 };
 
 #endif //_SIGNOUTUI_H
