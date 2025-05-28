@@ -48,6 +48,7 @@ void doTask()
 	// 메뉴 파싱을 위한 level 구분을 위한 변수
 	int menu_level_1 = 0, menu_level_2 = 0;
 	bool is_program_exit = false;
+	string id = "";
 	while (!is_program_exit)
 	{
 		// 입력파일에서 메뉴 숫자 2개를 읽기
@@ -73,12 +74,12 @@ void doTask()
 			{
 			case 1: // "2.1. 로그인“ 메뉴 부분
 			{
-				sign_in_ui.EnterAccountInfo(in_fp, out_fp);
+				sign_in_ui.EnterAccountInfo(in_fp, out_fp, id);
 				break;
 			}
 			case 2: // "2.2. 로그아웃“ 메뉴 부분
 			{
-				sign_out_ui.RequestSignOut(out_fp);
+				sign_out_ui.RequestSignOut(out_fp, id);
 				break;
 			}
 			}

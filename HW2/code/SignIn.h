@@ -8,7 +8,6 @@ using namespace std;
 class SignIn {
 public:
 	SignIn();
-	~SignIn();
 	void HandleSignIn(string id, string password);
 private:
 	Member* pmember_account_;

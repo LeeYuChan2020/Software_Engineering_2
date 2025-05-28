@@ -10,7 +10,7 @@ class SignOutUI {
 public: 
 	SignOutUI();
 	~SignOutUI();
-	void RequestSignOut(ofstream& output_file);
+	void RequestSignOut(ofstream& output_file, string& id);
 private: 
 	SignOut *psign_out_;
 };

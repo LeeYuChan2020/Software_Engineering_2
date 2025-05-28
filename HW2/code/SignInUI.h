@@ -9,7 +9,7 @@ class SignInUI {
 public: 
 	SignInUI();
 	~SignInUI();
-	void EnterAccountInfo(ifstream& input_file, ofstream& output_file);
+	void EnterAccountInfo(ifstream& input_file, ofstream& output_file, string& id);
 private: 
 	SignIn* psign_in_;
 };

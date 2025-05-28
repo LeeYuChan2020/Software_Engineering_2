@@ -1,5 +1,5 @@
 #include "Member.h"
-#include <iostream>
+
 Member::Member() {
 	is_logged_in_ = false;
 	is_exit_ = false;
@@ -14,13 +14,13 @@ void Member::LoadAccount(string id, string password) {
 	password_ = password;
 }
 
+
 void Member::ClearSession(string& id) {
-	//로그아웃하는 id 값 전달
-	id = id_;
 	//데이터 초기화
 	id_ = "";
 	password_ = "";
 	is_logged_in_ = false;
+	id = id_;
 }
 
 

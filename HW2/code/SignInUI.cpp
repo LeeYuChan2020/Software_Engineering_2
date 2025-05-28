@@ -8,10 +8,9 @@ SignInUI::~SignInUI() {
 	delete psign_in_;
 }
 
-void SignInUI::EnterAccountInfo(ifstream& input_file, ofstream& output_file) {
-	string id, password;
+void SignInUI::EnterAccountInfo(ifstream& input_file, ofstream& output_file, string& id) {
+	string password;
 	input_file >> id >> password;
-
 
 	psign_in_->HandleSignIn(id, password);
 
